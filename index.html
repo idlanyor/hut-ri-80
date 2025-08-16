@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Website perayaan HUT RI ke-80 Indonesia dengan tema Bersatu Berdaulat, Rakyat Sejahtera, Indonesia Maju">
+    <meta name="keywords" content="HUT RI 80, Indonesia, kemerdekaan, budaya, nusantara">
+    <meta name="author" content="Indonesia">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="HUT RI ke-80: Bersatu Berdaulat, Rakyat Sejahtera, Indonesia Maju">
+    <meta property="og:description"
+        content="Merayakan 80 tahun kemerdekaan Indonesia dengan menampilkan kekayaan budaya nusantara">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <title>HUT RI ke-80: Bersatu Berdaulat, Rakyat Sejahtera, Indonesia Maju</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/images/logo-hut-80.png" alt="Logo HUT RI ke-80" class="logo-img">
+                <span class="logo-text">HUT RI 80</span>
+            </div>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link" aria-current="page">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#budaya" class="nav-link">Budaya</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#filosofi" class="nav-link">Filosofi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#galeri" class="nav-link">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#timeline" class="nav-link">Timeline</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero" role="banner">
+            <div class="hero-background">
+                <video class="hero-video" autoplay muted loop playsinline>
+                    <source src="assets/videos/indonesia-hero-compressed.mp4" type="video/mp4">
+                    <source src="assets/videos/indonesia-hero.webm" type="video/webm">
+                    <!-- Fallback untuk browser yang tidak mendukung video -->
+                </video>
+                <div class="hero-video-overlay"></div>
+            </div>
+
+            <div class="hero-container">
+                <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="hero-title-main">HUT RI ke-80</span>
+                            <span class="hero-title-sub">Bersatu Berdaulat</span>
+                            <span class="hero-title-sub">Rakyat Sejahtera</span>
+                            <span class="hero-title-sub">Indonesia Maju</span>
+                        </h1>
+
+                        <p class="hero-description" data-aos="fade-up" data-aos-delay="300">
+                            Merayakan 80 tahun kemerdekaan Indonesia dengan semangat persatuan,
+                            kedaulatan, kesejahteraan rakyat, dan kemajuan bangsa.
+                            Mari jelajahi kekayaan budaya nusantara yang membanggakan.
+                        </p>
+                    </div>
+                    
+                    <!-- <div class="hero-cta" data-aos="fade-up" data-aos-delay="500">
+                        <a href="#budaya" class="btn btn-primary">
+                            <i class="fas fa-compass" aria-hidden="true"></i>
+                            Jelajahi Kekayaan Nusantara
+                        </a>
+                        <a href="#about" class="btn btn-secondary">
+                            <i class="fas fa-info-circle" aria-hidden="true"></i>
+                            Pelajari Lebih Lanjut
+                        </a>
+                    </div> -->
+                </div>
+
+                <!-- Video Modal -->
+                <div id="videoModal" class="video-modal">
+                    <div class="video-modal-content">
+                        <span class="video-modal-close">&times;</span>
+                        <div class="video-container">
+                            <iframe id="videoFrame" src="" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3 id="videoTitle"></h3>
+                            <p id="videoDescription"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-scroll-indicator">
+                <div class="scroll-arrow">
+                    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </div>
+                <span class="scroll-text">Scroll untuk menjelajah</span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about" role="region" aria-labelledby="about-title">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 id="about-title" class="section-title">Makna Tema HUT RI ke-80</h2>
+                    <p class="section-subtitle">
+                        Memahami filosofi dan makna mendalam dari tema perayaan kemerdekaan Indonesia tahun 2025
+                    </p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-icon">
+                            <i class="fas fa-handshake" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="card-title">Bersatu</h3>
+                        <p class="card-description">
+                            Persatuan dalam keberagaman adalah kekuatan utama bangsa Indonesia.
+                            Bhinneka Tunggal Ika menjadi semangat yang menyatukan seluruh elemen bangsa
+                            dalam mencapai cita-cita bersama.
+                        </p>
+                        <div class="card-stats">
+                            <span class="stat-number" data-count="17000">0</span>
+                            <span class="stat-label">Pulau</span>
+                        </div>
+                    </div>
+
+                    <div class="about-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-icon">
+                            <i class="fas fa-crown" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="card-title">Berdaulat</h3>
+                        <p class="card-description">
+                            Kedaulatan penuh atas wilayah, politik, ekonomi, dan budaya.
+                            Indonesia berdiri tegak sebagai bangsa yang merdeka dan berdaulat
+                            di tengah pergaulan internasional.
+                        </p>
+                        <div class="card-stats">
+                            <span class="stat-number" data-count="1945">0</span>
+                            <span class="stat-label">Tahun Merdeka</span>
+                        </div>
+                    </div>
+
+                    <div class="about-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-icon">
+                            <i class="fas fa-heart" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="card-title">Rakyat Sejahtera</h3>
+                        <p class="card-description">
+                            Kesejahteraan rakyat adalah tujuan utama pembangunan.
+                            Keadilan sosial bagi seluruh rakyat Indonesia menjadi cita-cita
+                            yang terus diperjuangkan.
+                        </p>
+                        <div class="card-stats">
+                            <span class="stat-number" data-count="270">0</span>
+                            <span class="stat-label">Juta Penduduk</span>
+                        </div>
+                    </div>
+
+                    <div class="about-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card-icon">
+                            <i class="fas fa-rocket" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="card-title">Indonesia Maju</h3>
+                        <p class="card-description">
+                            Kemajuan di segala bidang menjadi visi Indonesia ke depan.
+                            Inovasi, teknologi, dan pembangunan berkelanjutan adalah kunci
+                            menuju Indonesia yang lebih maju.
+                        </p>
+                        <div class="card-stats">
+                            <span class="stat-number" data-count="2045">0</span>
+                            <span class="stat-label">Visi Indonesia Emas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cultural Heritage Section -->
+        <section id="budaya" class="culture" role="region" aria-labelledby="culture-title">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 id="culture-title" class="section-title">Kekayaan Budaya Nusantara</h2>
+                    <p class="section-subtitle">
+                        Menjelajahi warisan budaya Indonesia yang kaya dan beragam dari Sabang sampai Merauke
+                    </p>
+                </div>
+
+                <!-- Lagu Kebangsaan -->
+                <div class="culture-subsection" data-aos="fade-up">
+                    <h3 class="subsection-title">
+                        <i class="fas fa-music" aria-hidden="true"></i>
+                        Lagu Kebangsaan Indonesia Raya
+                    </h3>
+
+                    <div class="anthem-container">
+                        <div class="anthem-info">
+                            <h4>Indonesia Raya</h4>
+                            <p class="anthem-composer">Ciptaan: W.R. Supratman</p>
+                            <p class="anthem-description">
+                                Lagu kebangsaan yang menggugah semangat patriotisme dan cinta tanah air.
+                                Diciptakan oleh Wage Rudolf Supratman pada tahun 1928.
+                            </p>
+                        </div>
+
+                        <div class="anthem-player">
+                            <audio controls class="audio-player" aria-label="Audio player untuk lagu Indonesia Raya">
+                                <source src="assets/audio/indonesia-raya.mp3" type="audio/mpeg">
+                                Browser Anda tidak mendukung audio player.
+                            </audio>
+                        </div>
+
+                        <div class="anthem-lyrics">
+                            <button class="lyrics-toggle" id="lyrics-toggle" aria-expanded="false">
+                                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                                Lihat Lirik
+                            </button>
+                            <div class="lyrics-content" id="lyrics-content">
+                                <div class="lyrics-text">
+                                    <p>Indonesia tanah airku<br>
+                                        Tanah tumpah darahku<br>
+                                        Di sanalah aku berdiri<br>
+                                        Jadi pandu ibuku</p>
+
+                                    <p>Indonesia kebangsaanku<br>
+                                        Bangsa dan tanah airku<br>
+                                        Marilah kita berseru<br>
+                                        Indonesia bersatu</p>
+
+                                    <p><strong>Hiduplah tanahku<br>
+                                            Hiduplah negeriku<br>
+                                            Bangsaku rakyatku semuanya<br>
+                                            Bangunlah jiwanya<br>
+                                            Bangunlah badannya<br>
+                                            Untuk Indonesia Raya</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kekayaan Alam -->
+                <div class="culture-subsection" data-aos="fade-up">
+                    <h3 class="subsection-title">
+                        <i class="fas fa-leaf" aria-hidden="true"></i>
+                        Kekayaan Alam Indonesia
+                    </h3>
+
+                    <div class="nature-grid">
+                        <div class="nature-card">
+                            <img src="assets/images/kekayaan-alam-1.jpg" alt="Hutan hujan tropis Indonesia"
+                                class="nature-img">
+                            <div class="nature-overlay">
+                                <h4>Hutan Hujan Tropis</h4>
+                                <p>Paru-paru dunia dengan keanekaragaman hayati tertinggi</p>
+                            </div>
+                        </div>
+
+                        <div class="nature-card">
+                            <img src="assets/images/kekayaan-alam-2.jpg" alt="Laut dan terumbu karang Indonesia"
+                                class="nature-img">
+                            <div class="nature-overlay">
+                                <h4>Laut dan Terumbu Karang</h4>
+                                <p>Segitiga terumbu karang dunia dengan biota laut terkaya</p>
+                            </div>
+                        </div>
+
+                        <div class="nature-card">
+                            <img src="assets/images/kekayaan-alam-3.jpg" alt="Gunung dan pegunungan Indonesia"
+                                class="nature-img">
+                            <div class="nature-overlay">
+                                <h4>Gunung dan Pegunungan</h4>
+                                <p>Ring of Fire dengan gunung berapi aktif dan tanah subur</p>
+                            </div>
+                        </div>
+
+                        <div class="nature-card">
+                            <img src="assets/images/kekayaan-alam-4.jpg" alt="Sumber daya mineral Indonesia"
+                                class="nature-img">
+                            <div class="nature-overlay">
+                                <h4>Sumber Daya Mineral</h4>
+                                <p>Kekayaan tambang emas, nikel, batubara, dan minyak bumi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pakaian Adat -->
+                <div class="culture-subsection" data-aos="fade-up">
+                    <h3 class="subsection-title">
+                        <i class="fas fa-tshirt" aria-hidden="true"></i>
+                        Pakaian Adat Nusantara
+                    </h3>
+                    <p class="section-description">Keragaman pakaian adat Indonesia mencerminkan kekayaan budaya dari Sabang sampai Merauke</p>
+
+                    <div class="clothing-filter">
+                        <button class="filter-btn active" data-filter="all">Semua</button>
+                        <button class="filter-btn" data-filter="sumatera">Sumatera</button>
+                        <button class="filter-btn" data-filter="jawa">Jawa</button>
+                        <button class="filter-btn" data-filter="kalimantan">Kalimantan</button>
+                        <button class="filter-btn" data-filter="sulawesi">Sulawesi</button>
+                        <button class="filter-btn" data-filter="papua">Papua</button>
+                        <button class="filter-btn" data-filter="nusa-tenggara">Nusa Tenggara</button>
+                        <button class="filter-btn" data-filter="maluku">Maluku</button>
+                    </div>
+
+                    <div class="clothing-grid" id="clothing-grid">
+                        <!-- Sumatera -->
+                        <div class="clothing-card" data-category="sumatera">
+                            <div class="clothing-image-container">
+                                <img src="assets/images/pakaian-adat-1.jpg" alt="Pakaian adat Aceh - Ulee Balang" class="clothing-img">
+                                <div class="clothing-badge">Aceh</div>
+                            </div>
+                            <div class="clothing-info">
+                                <h4>Ulee Balang</h4>
+                                <p class="clothing-origin">Aceh, Sumatera</p>
+                                <div class="clothing-details">
+                                    <span class="detail-tag">Formal</span>
+                                    <span class="detail-tag">Kerajaan</span>
+                                </div>
+                                <p class="clothing-description">Pakaian adat kerajaan Aceh yang megah dengan hiasan emas dan warna-warna cerah, melambangkan kemegahan dan martabat bangsawan Aceh.</p>
+                            </div>
+                        </div>
+
+                        <div class="clothing-card" data-category="sumatera">
+                            <div class="clothing-image-container">
+                                <img src="assets/images/pakaian-adat-2.jpg" alt="Pakaian adat Sumatera Utara - Ulos" class="clothing-img">
+                                <div class="clothing-badge">Sumut</div>
+                            </div>
+                            <div class="clothing-info">
+                                <h4>Ulos Batak</h4>
+                                <p class="clothing-origin">Sumatera Utara</p>
+                                <div class="clothing-details">
+                                    <span class="detail-tag">Tenun</span>
+                                    <span class="detail-tag">Sakral</span>
+                                </div>
+                                <p class="clothing-description">Kain tenun tradisional Batak yang memiliki makna filosofis mendalam, digunakan dalam upacara adat dan melambangkan kehangatan serta perlindungan.</p>
+                            </div>
+                        </div>
+
+                        <div class="clothing-card" data-category="sumatera">
+                            <div class="clothing-image-container">
+                                <img src="assets/images/pakaian-adat-minang.jpg" alt="Pakaian adat Minangkabau - Bundo Kanduang" class="clothing-img">
+                                <div class="clothing-badge">Sumbar</div>
+                            </div>
+                            <div class="clothing-info">
+                                <h4>Bundo Kanduang</h4>
+                                <p class="clothing-origin">Sumatera Barat</p>
+                                <div class="clothing-details">
+                                    <span class="detail-tag">Matrilineal</span>
+                                    <span class="detail-tag">Songket</span>
+                                </div>
+                                <p class="clothing-description">Pakaian adat wanita Minangkabau dengan hiasan songket emas, mencerminkan sistem matrilineal dan keanggunan budaya Minang.</p>
+                            </div>
+                        </div>
+
+                        <!-- Jawa -->
+                        <div class="clothing-card" data-category="jawa">
+                            <div class="clothing-image-container">
+                                <img src="assets/images/pakaian-adat-3.jpg" alt="Pakaian adat Jawa - Kebaya" class="clothing-img">
+                                <div class="clothing-badge">Jawa</div>
+                            </div>
+                            <div class="clothing-info">
+                                <h4>Kebaya Jawa</h4>
+                                <p class="clothing-origin">Jawa Tengah & Timur</p>
+                                <div class="clothing-details">
+                                    <span class="detail-tag">Elegan</span>
+                                    <span class="detail-tag">Batik</span>
+                                </div>
+                                <p class="clothing-description">Pakaian tradisional wanita Jawa yang anggun, dipadukan dengan kain batik dan selendang, melambangkan kehalusan budi pekerti wanita Jawa.</p>
+                            </div>
+                        </div>
+
+                        <div class="clothing-card" data-category="jawa">
+                            <div class="clothing-image-container">
+                                <img src="assets/images/pakaian-adat-4.jpg" alt="Pakaian adat Bali - Payas Agung" class="clothing-img">
+                                <div class="clothing-badge">Bali</div>
+                            </div>
+                            <div class="clothing-info">
+                                <h4>Payas Agung</h4>
+                                <p class="clothing-origin">Bali</p>
+                                <div class="clothing-details">
+                                    <span class="detail-tag">Hindu</span>
+                                    <span class="detail-tag">Upacara</span>
+                                </div>
+                                <p class="clothing-description">Pakaian adat Bali yang mewah untuk upacara keagamaan, dengan hiasan emas dan kain songket yang mencerminkan kemegahan budaya Hindu-Bali.</p>
+                            </div>
+                        </div>
+
+                        <div class="clothing-card" data-category="jawa">
+                            <div class="clothing-image-container">
+                                <img src="assets/images/pakaian-adat-betawi.jpg" alt="Pakaian adat Betawi - Abang None" class="clothing-img">
+                                <div class="clothing-badge">Jakarta</div>
+                            </div>
+                            <div class="clothing-info">
+                                <h4>Abang None</h4>
+                                <p class="clothing-origin">Jakarta (Betawi)</p>
+                                <div class="clothing-details">
+                                    <span class="detail-tag">Urban</span>
+                                    <span class="detail-tag">Multikultural</span>
+                                </div>
+                                <p class="clothing-description">Pakaian adat Betawi yang mencerminkan perpaduan budaya Tionghoa, Arab, dan Melayu di Jakarta, dengan warna cerah dan aksesoris khas.</p>
+                            </div>
+                        </div>
+
+                        <!-- Kalimantan -->
+                        <div class="clothing-card" data-category="kalimantan">
+                            <div class="clothing-image-container">
+                                <img src="assets/images/pakaian-adat-dayak.jpg" alt="Pakaian adat Dayak - Ta'a dan Sapei Sapaq" class="clothing-img">
+                                <div class="clothing-badge">Kalbar</div>
+                            </div>
+                            <div class="clothing-info">
+                                <h4>Ta'a & Sapei Sapaq</h4>
+                                <p class="clothing-origin">Kalimantan Barat</p>
+                                <div class="clothing-details">
+                                    <span class="detail-tag">Dayak</span>
+                                    <span class="detail-tag">Alam</span>
+                                </div>
+                                <p class="clothing-description">Pakaian adat suku Dayak dengan hiasan manik-manik, bulu burung, dan aksesoris dari alam yang mencerminkan kedekatan dengan hutan Kalimantan.</p>
+                            </div>
+                        </div>
+
+                        <div class="clothing-card" data-category="kalimantan">
+                            <div class="clothing-image-container">
+                                <img src="assets/images/pakaian-adat-banjar.jpg" alt="Pakaian adat Banjar - Bagajah Gamuling" class="clothing-img">
+                                <div class="clothing-badge">Kalsel</div>
+                            </div>
+                            <div class="clothing-info">
+                                <h4>Bagajah Gamuling</h4>
+                                <p class="clothing-origin">Kalimantan Selatan</p>
+                                <div class="clothing-details">
+                                    <span class="detail-tag">Melayu</span>
+                                    <span class="detail-tag">Islam</span>
+                                </div>
+                                <p class="clothing-description">Pakaian adat Banjar yang memadukan unsur Melayu dan Islam, dengan warna kuning keemasan yang melambangkan kemegahan kerajaan Banjar.</p>
+                            </div>
+                        </div>
+
+                        <!-- Sulawesi -->
+                        <div class="clothing-card" data-category="sulawesi">
+                            <div class="clothing-image-container">
+                                <img src="assets/images/pakaian-adat-bugis.jpg" alt="Pakaian adat Bugis - Baju Bodo" class="clothing-img">
+                                <div class="clothing-badge">Sulsel</div>
+                            </div>
+                            <div class="clothing-info">
+                                <h4>Baju Bodo</h4>
+                                <p class="clothing-origin">Sulawesi Selatan</p>
+                                <div class="clothing-details">
+                                    <span class="detail-tag">Bugis</span>
+                                    <span class="detail-tag">Sederhana</span>
+                                </div>
+                                <p class="clothing-description">Pakaian tradisional wanita Bugis-Makassar yang sederhana namun elegan, dengan bentuk persegi yang melambangkan kesucian dan kesederhanaan.</p>
+                            </div>
+                        </div>
+
+                        <div class="clothing-card" data-category="sulawesi">
+                            <div class="clothing-image-container">
+                                <img src="assets/images/pakaian-adat-toraja.jpg" alt="Pakaian adat Toraja - Pokko" class="clothing-img">
+                                <div class="clothing-badge">Sulsel</div>
+                            </div>
+                            <div class="clothing-info">
+                                <h4>Pokko Toraja</h4>
+                                <p class="clothing-origin">Tana Toraja, Sulawesi Selatan</p>
+                                <div class="clothing-details">
+                                    <span class="detail-tag">Ritual</span>
+                                    <span class="detail-tag">Tenun</span>
+                                </div>
+                                <p class="clothing-description">Pakaian adat Toraja dengan motif geometris khas dan warna-warna natural, digunakan dalam upacara adat dan ritual keagamaan tradisional.</p>
+                            </div>
+                        </div>
+
+                        <!-- Papua -->
+                        <div class="clothing-card" data-category="papua">
+                            <div class="clothing-image-container">
+                                <img src="assets/images/pakaian-adat-papua.jpg" alt="Pakaian adat Papua - Koteka dan Sali" class="clothing-img">
+                                <div class="clothing-badge">Papua</div>
+                            </div>
+                            <div class="clothing-info">
+                                <h4>Koteka & Sali</h4>
+                                <p class="clothing-origin">Papua</p>
+                                <div class="clothing-details">
+                                    <span class="detail-tag">Tradisional</span>
+                                    <span class="detail-tag">Alam</span>
+                                </div>
+                                <p class="clothing-description">Pakaian adat Papua yang terbuat dari bahan-bahan alami seperti kulit kayu dan bulu burung, mencerminkan kehidupan harmonis dengan alam.</p>
+                            </div>
+                        </div>
+
+                        <div class="clothing-card" data-category="papua">
+                            <div class="clothing-image-container">
+                                <img src="assets/images/pakaian-adat-papua-barat.jpg" alt="Pakaian adat Papua Barat - Ewer" class="clothing-img">
+                                <div class="clothing-badge">Papua Barat</div>
+                            </div>
+                            <div class="clothing-info">
+                                <h4>Ewer</h4>
+                                <p class="clothing-origin">Papua Barat</p>
+                                <div class="clothing-details">
+                                    <span class="detail-tag">Serat</span>
+                                    <span class="detail-tag">Pewarna Alam</span>
+                                </div>
+                                <p class="clothing-description">Pakaian adat Papua Barat yang dibuat dari serat tumbuhan dengan pewarna alami, dihiasi dengan aksesoris dari cangkang kerang dan manik-manik.</p>
+                            </div>
+                        </div>
+
+                        <!-- Nusa Tenggara -->
+                        <div class="clothing-card" data-category="nusa-tenggara">
+                            <div class="clothing-image-container">
+                                <img src="assets/images/pakaian-adat-lombok.jpg" alt="Pakaian adat Lombok - Pegon" class="clothing-img">
+                                <div class="clothing-badge">NTB</div>
+                            </div>
+                            <div class="clothing-info">
+                                <h4>Pegon Sasak</h4>
+                                <p class="clothing-origin">Lombok, Nusa Tenggara Barat</p>
+                                <div class="clothing-details">
+                                    <span class="detail-tag">Sasak</span>
+                                    <span class="detail-tag">Songket</span>
+                                </div>
+                                <p class="clothing-description">Pakaian adat suku Sasak Lombok dengan kain songket yang indah, mencerminkan keterampilan menenun yang tinggi dan nilai-nilai budaya Sasak.</p>
+                            </div>
+                        </div>
+
+                        <div class="clothing-card" data-category="nusa-tenggara">
+                            <div class="clothing-image-container">
+                                <img src="assets/images/pakaian-adat-flores.jpg" alt="Pakaian adat Flores - Lawo Ngata" class="clothing-img">
+                                <div class="clothing-badge">NTT</div>
+                            </div>
+                            <div class="clothing-info">
+                                <h4>Lawo Ngata</h4>
+                                <p class="clothing-origin">Flores, Nusa Tenggara Timur</p>
+                                <div class="clothing-details">
+                                    <span class="detail-tag">Ikat</span>
+                                    <span class="detail-tag">Ritual</span>
+                                </div>
+                                <p class="clothing-description">Pakaian adat Flores dengan teknik tenun ikat yang rumit, setiap motif memiliki makna spiritual dan digunakan dalam upacara adat penting.</p>
+                            </div>
+                        </div>
+
+                        <!-- Maluku -->
+                        <div class="clothing-card" data-category="maluku">
+                            <div class="clothing-image-container">
+                                <img src="assets/images/pakaian-adat-maluku.jpg" alt="Pakaian adat Maluku - Cele" class="clothing-img">
+                                <div class="clothing-badge">Maluku</div>
+                            </div>
+                            <div class="clothing-info">
+                                <h4>Cele Maluku</h4>
+                                <p class="clothing-origin">Maluku</p>
+                                <div class="clothing-details">
+                                    <span class="detail-tag">Maritim</span>
+                                    <span class="detail-tag">Rempah</span>
+                                </div>
+                                <p class="clothing-description">Pakaian adat Maluku yang mencerminkan budaya maritim dan sejarah sebagai pusat perdagangan rempah-rempah dunia, dengan warna-warna cerah khas kepulauan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarian Tradisional -->
+                <div class="culture-subsection" data-aos="fade-up">
+                    <h3 class="subsection-title">
+                        <i class="fas fa-theater-masks" aria-hidden="true"></i>
+                        Tarian Tradisional
+                    </h3>
+
+                    <div class="dance-grid">
+                        <div class="dance-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                            <div class="dance-thumbnail">
+                                <img src="assets/images/tarian/saman.png" alt="Tari Saman dari Aceh" class="dance-img">
+                                <div class="play-overlay">
+                                    <i class="fas fa-play" aria-hidden="true"></i>
+                                </div>
+                                <div class="dance-badge">UNESCO</div>
+                            </div>
+                            <div class="dance-info">
+                                <h4>Tari Saman</h4>
+                                <p class="dance-origin">Aceh - Tari seribu tangan yang mendunia</p>
+                                <div class="dance-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">Asal:</span>
+                                        <span class="detail-value">Gayo, Aceh</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Penari:</span>
+                                        <span class="detail-value">Pria (ganjil)</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Tempo:</span>
+                                        <span class="detail-value">Sangat cepat</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Status:</span>
+                                        <span class="detail-value">Warisan Dunia UNESCO</span>
+                                    </div>
+                                </div>
+                                <p class="dance-description" style="display:none;">
+                                    Tari Saman adalah tarian tradisional suku Gayo yang telah diakui UNESCO sebagai Warisan Budaya Takbenda Dunia. Tarian ini menampilkan gerakan yang sangat cepat dan kompak dari para penari yang duduk bersila. Keunikan tari Saman terletak pada kecepatan gerakan tangan, kepala, dan badan yang dilakukan secara sinkron tanpa iringan alat musik, hanya diiringi syair dan tepukan tangan. Tarian ini mengandung nilai-nilai religius, sosial, dan pendidikan yang mendalam, sering dipentaskan dalam acara-acara penting sebagai simbol persatuan dan kekompakan masyarakat Aceh.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="dance-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                            <div class="dance-thumbnail">
+                                <img src="assets/images/tarian/kecak.png" alt="Tari Kecak dari Bali" class="dance-img">
+                                <div class="play-overlay">
+                                    <i class="fas fa-play" aria-hidden="true"></i>
+                                </div>
+                                <div class="dance-badge">Spiritual</div>
+                            </div>
+                            <div class="dance-info">
+                                <h4>Tari Kecak</h4>
+                                <p class="dance-origin">Bali - Tari api yang memukau dunia</p>
+                                <div class="dance-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">Asal:</span>
+                                        <span class="detail-value">Gianyar, Bali</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Penari:</span>
+                                        <span class="detail-value">Puluhan pria</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Properti:</span>
+                                        <span class="detail-value">Api dan kostum Hanoman</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Cerita:</span>
+                                        <span class="detail-value">Ramayana</span>
+                                    </div>
+                                </div>
+                                <p class="dance-description" style="display:none;">
+                                    Tari Kecak adalah pertunjukan seni tradisional Bali yang memadukan tarian, drama, dan musik vokal. Tarian ini menampilkan puluhan pria yang duduk melingkar sambil mengucapkan "cak" secara berulang-ulang dengan ritme yang berbeda-beda, menciptakan harmoni suara yang memukau. Di tengah lingkaran, penari berperan sebagai tokoh-tokoh dalam epos Ramayana, terutama kisah Hanoman yang membakar Alengka. Keunikan tari Kecak terletak pada tidak digunakannya alat musik sama sekali, melainkan hanya mengandalkan suara manusia dan api sebagai elemen dramatisnya. Tarian ini tidak hanya menghibur tetapi juga mengandung nilai spiritual dan filosofis yang mendalam tentang kebaikan melawan kejahatan.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="dance-card" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                            <div class="dance-thumbnail">
+                                <img src="assets/images/tarian/pendet.png" alt="Tari Pendet dari Bali" class="dance-img">
+                                <div class="play-overlay">
+                                    <i class="fas fa-play" aria-hidden="true"></i>
+                                </div>
+                                <div class="dance-badge">Sakral</div>
+                            </div>
+                            <div class="dance-info">
+                                <h4>Tari Pendet</h4>
+                                <p class="dance-origin">Bali - Tari penyambutan tradisional yang anggun dan sakral</p>
+                                <div class="dance-details">
+                                    <div class="detail-item">
+                                        <span class="detail-label">Asal:</span>
+                                        <span class="detail-value">Pulau Bali</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Fungsi:</span>
+                                        <span class="detail-value">Tari penyambutan dan persembahan</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Penari:</span>
+                                        <span class="detail-value">Wanita muda</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Properti:</span>
+                                        <span class="detail-value">Bokor berisi bunga</span>
+                                    </div>
+                                </div>
+                                <p class="dance-description" style="display:none;">
+                                    Tari Pendet adalah tarian tradisional Bali yang awalnya merupakan tari pemujaan yang dipersembahkan di pura-pura. Tarian ini menggambarkan keanggunan wanita Bali dalam menyambut tamu dengan menabur bunga sebagai simbol penyucian dan pemberkatan. Gerakan lemah gemulai penari mencerminkan kehalusan budaya Bali, dengan setiap gerak tangan dan langkah kaki yang penuh makna spiritual. Para penari membawa bokor berisi bunga frangipani dan kelopak mawar yang ditaburkan sebagai persembahan kepada para dewa dan tamu yang hadir. Dalam perkembangannya, Tari Pendet telah menjadi tari penyambutan resmi Bali yang sering dipentaskan untuk menyambut tamu penting, wisatawan, dan dalam berbagai upacara adat. Keindahan kostum tradisional dengan warna-warna cerah dan aksesoris emas menambah kemegahan pertunjukan ini.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Philosophy Section -->
+        <section id="filosofi" class="philosophy" role="region" aria-labelledby="philosophy-title">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 id="philosophy-title" class="section-title">Filosofi Budaya Nusantara</h2>
+                    <p class="section-subtitle">
+                        Mendalami makna dan filosofi yang terkandung dalam warisan budaya Indonesia
+                    </p>
+                </div>
+
+                <div class="philosophy-tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-tab="batik">Batik</button>
+                        <button class="tab-btn" data-tab="wayang">Wayang</button>
+                        <button class="tab-btn" data-tab="keris">Keris</button>
+                        <button class="tab-btn" data-tab="garuda">Garuda Pancasila</button>
+                    </div>
+
+                    <div class="tab-content">
+                        <div class="tab-panel active" id="batik-panel">
+                            <div class="philosophy-content">
+                                <div class="philosophy-visual">
+                                    <img src="assets/images/filosofi-batik.jpg"
+                                        alt="Motif batik dengan filosofi mendalam" class="philosophy-img">
+                                </div>
+                                <div class="philosophy-text">
+                                    <h3>Filosofi Batik</h3>
+                                    <p>
+                                        Batik bukan sekadar kain bermotif, tetapi merupakan representasi filosofi hidup
+                                        masyarakat Indonesia. Setiap motif mengandung makna mendalam tentang kehidupan,
+                                        alam, dan spiritualitas.
+                                    </p>
+                                    <div class="philosophy-points">
+                                        <div class="point">
+                                            <h4>Motif Parang</h4>
+                                            <p>Melambangkan kekuatan dan keteguhan dalam menghadapi ombak kehidupan</p>
+                                        </div>
+                                        <div class="point">
+                                            <h4>Motif Kawung</h4>
+                                            <p>Simbol kesucian dan panjang umur, terinspirasi dari buah kolang-kaling
+                                            </p>
+                                        </div>
+                                        <div class="point">
+                                            <h4>Motif Mega Mendung</h4>
+                                            <p>Melambangkan kesabaran dan ketenangan dalam menghadapi badai</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-panel" id="wayang-panel">
+                            <div class="philosophy-content">
+                                <div class="philosophy-visual">
+                                    <img src="assets/images/filosofi-wayang.jpg" alt="Wayang kulit dengan filosofi Jawa"
+                                        class="philosophy-img">
+                                </div>
+                                <div class="philosophy-text">
+                                    <h3>Filosofi Wayang</h3>
+                                    <p>
+                                        Wayang adalah cerminan kehidupan manusia. Setiap pertunjukan wayang
+                                        mengandung nilai-nilai moral, etika, dan filosofi hidup yang mendalam.
+                                    </p>
+                                    <div class="philosophy-points">
+                                        <div class="point">
+                                            <h4>Gunungan</h4>
+                                            <p>Melambangkan alam semesta dan perjalanan hidup manusia</p>
+                                        </div>
+                                        <div class="point">
+                                            <h4>Tokoh Pandawa</h4>
+                                            <p>Representasi sifat-sifat mulia yang harus dimiliki manusia</p>
+                                        </div>
+                                        <div class="point">
+                                            <h4>Kelir</h4>
+                                            <p>Simbol batas antara dunia nyata dan dunia maya</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-panel" id="keris-panel">
+                            <div class="philosophy-content">
+                                <div class="philosophy-visual">
+                                    <img src="assets/images/filosofi-keris.jpg"
+                                        alt="Keris pusaka dengan makna filosofis" class="philosophy-img">
+                                </div>
+                                <div class="philosophy-text">
+                                    <h3>Filosofi Keris</h3>
+                                    <p>
+                                        Keris adalah simbol bersatunya seorang hamba dengan Tuhannya.
+                                        Filosofi "curiga manjing warongko" menggambarkan kesempurnaan
+                                        hubungan antara kawula dan gusti.
+                                    </p>
+                                    <div class="philosophy-points">
+                                        <div class="point">
+                                            <h4>Bilah Keris</h4>
+                                            <p>Melambangkan ketajaman budi pekerti dan kebijaksanaan</p>
+                                        </div>
+                                        <div class="point">
+                                            <h4>Warangka</h4>
+                                            <p>Simbol pengendalian diri dan kesabaran</p>
+                                        </div>
+                                        <div class="point">
+                                            <h4>Pamor</h4>
+                                            <p>Representasi keindahan batin yang terpancar keluar</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-panel" id="garuda-panel">
+                            <div class="philosophy-content">
+                                <div class="philosophy-visual">
+                                    <img src="assets/images/garuda-pancasila.jpg"
+                                        alt="Garuda Pancasila lambang negara Indonesia" class="philosophy-img">
+                                </div>
+                                <div class="philosophy-text">
+                                    <h3>Filosofi Garuda Pancasila</h3>
+                                    <p>
+                                        Garuda Pancasila adalah lambang negara yang mengandung filosofi mendalam
+                                        tentang ideologi bangsa Indonesia. Setiap elemen memiliki makna yang
+                                        mencerminkan nilai-nilai Pancasila.
+                                    </p>
+                                    <div class="philosophy-points">
+                                        <div class="point">
+                                            <h4>Burung Garuda</h4>
+                                            <p>Melambangkan kekuatan, kebebasan, dan kemerdekaan</p>
+                                        </div>
+                                        <div class="point">
+                                            <h4>Perisai</h4>
+                                            <p>Simbol pertahanan dan perlindungan bangsa</p>
+                                        </div>
+                                        <div class="point">
+                                            <h4>Bhinneka Tunggal Ika</h4>
+                                            <p>Semboyan persatuan dalam keberagaman</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="galeri" class="gallery" role="region" aria-labelledby="gallery-title">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 id="gallery-title" class="section-title">Galeri Kemerdekaan</h2>
+                    <p class="section-subtitle">
+                        Koleksi foto dan dokumentasi perjalanan Indonesia dari masa ke masa
+                    </p>
+                </div>
+
+                <div class="gallery-filter">
+                    <button class="filter-btn active" data-filter="all">Semua</button>
+                    <button class="filter-btn" data-filter="sejarah">Sejarah</button>
+                    <button class="filter-btn" data-filter="budaya">Budaya</button>
+                    <button class="filter-btn" data-filter="alam">Alam</button>
+                    <button class="filter-btn" data-filter="modern">Modern</button>
+                </div>
+
+                <div class="gallery-grid" id="gallery-grid">
+                    <div class="gallery-item" data-category="sejarah">
+                        <img src="assets/images/gallery-1.jpg" alt="Proklamasi kemerdekaan Indonesia"
+                            class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h4>Proklamasi Kemerdekaan</h4>
+                            <p>17 Agustus 1945</p>
+                            <button class="gallery-btn" aria-label="Lihat gambar lebih besar">
+                                <i class="fas fa-expand" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="budaya">
+                        <img src="assets/images/gallery-2.jpg" alt="Pertunjukan budaya tradisional" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h4>Pertunjukan Budaya</h4>
+                            <p>Warisan Nusantara</p>
+                            <button class="gallery-btn" aria-label="Lihat gambar lebih besar">
+                                <i class="fas fa-expand" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="alam">
+                        <img src="assets/images/gallery-3.jpg" alt="Keindahan alam Indonesia" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h4>Keindahan Alam</h4>
+                            <p>Indonesia</p>
+                            <button class="gallery-btn" aria-label="Lihat gambar lebih besar">
+                                <i class="fas fa-expand" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="modern">
+                        <img src="assets/images/gallery-4.jpg" alt="Indonesia modern dan maju" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h4>Indonesia Modern</h4>
+                            <p>Menuju 2045</p>
+                            <button class="gallery-btn" aria-label="Lihat gambar lebih besar">
+                                <i class="fas fa-expand" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section id="timeline" class="timeline-section" role="region" aria-labelledby="timeline-title">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 id="timeline-title" class="section-title">Perjalanan Indonesia</h2>
+                    <p class="section-subtitle">
+                        Menelusuri jejak sejarah Indonesia dari kemerdekaan hingga menuju Indonesia Emas 2045
+                    </p>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-marker">
+                            <span class="timeline-year">1945</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Proklamasi Kemerdekaan</h3>
+                            <p>Indonesia memproklamasikan kemerdekaannya pada 17 Agustus 1945</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="timeline-marker">
+                            <span class="timeline-year">1998</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Era Reformasi</h3>
+                            <p>Dimulainya era reformasi menuju Indonesia yang lebih demokratis</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="timeline-marker">
+                            <span class="timeline-year">2025</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>HUT RI ke-80</h3>
+                            <p>Merayakan 80 tahun kemerdekaan dengan semangat Indonesia Maju</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="timeline-marker">
+                            <span class="timeline-year">2045</span>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Indonesia Emas</h3>
+                            <p>Visi Indonesia menjadi negara maju dan sejahtera di usia 100 tahun</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/logo-hut-80.png" alt="Logo HUT RI ke-80" class="footer-logo-img">
+                        <span class="footer-logo-text">HUT RI ke-80</span>
+                    </div>
+                    <p class="footer-description">
+                        Merayakan 80 tahun kemerdekaan Indonesia dengan semangat
+                        Bersatu Berdaulat, Rakyat Sejahtera, Indonesia Maju.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Navigasi</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#about">Tentang</a></li>
+                        <li><a href="#budaya">Budaya</a></li>
+                        <li><a href="#filosofi">Filosofi</a></li>
+                        <li><a href="#galeri">Galeri</a></li>
+                        <li><a href="#timeline">Timeline</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Kontak</h3>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-envelope" aria-hidden="true"></i> info@hutri80.id</p>
+                        <p><i class="fas fa-phone" aria-hidden="true"></i> +62 21 1234 5678</p>
+                        <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Jakarta, Indonesia</p>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Media Sosial</h3>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 HUT RI ke-80. Dibuat dengan ❤️ untuk Indonesia.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Kembali ke atas">
+        <i class="fas fa-chevron-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- Modal for Gallery -->
+    <div class="modal" id="gallery-modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Tutup modal">
+                <i class="fas fa-times" aria-hidden="true"></i>
+            </button>
+            <img src="" alt="" class="modal-img" id="modal-img">
+            <div class="modal-info">
+                <h3 id="modal-title"></h3>
+                <p id="modal-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
